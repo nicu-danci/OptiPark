@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/selectTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/select_desired_time_n_n_parking_space"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:ignore="TextSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/name"
+        android:textColor="@color/buttonBlue"
+        android:textSize="20sp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/availabilityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/availability"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/selectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn24Hours"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="100dp"
+        android:backgroundTint="@color/buttonBlue"
+        android:text="@string/pay"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        tools:ignore="TextSizeCheck,VisualLintButtonSize" />
+
+
+
+    <!-- Buttons for selecting durations -->
+    <Button
+        android:id="@+id/btn1Hour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/availabilityTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="18dp"
+        android:backgroundTint="@color/buttonBlue"
+        android:text="@string/_1_hour"
+        android:textSize="16sp"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btn2Hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn1Hour"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="18dp"
+        android:backgroundTint="@color/buttonBlue"
+        android:text="@string/_2_hours"
+        android:textSize="16sp"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btn4Hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn2Hours"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="18dp"
+        android:backgroundTint="@color/buttonBlue"
+        android:text="@string/_4_hours"
+        android:textSize="16sp"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btn8Hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn4Hours"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="18dp"
+        android:backgroundTint="@color/buttonBlue"
+        android:text="@string/_8_hours"
+        android:textSize="16sp"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btn12Hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn8Hours"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="18dp"
+        android:backgroundTint="@color/buttonBlue"
+        android:text="@string/_12_hours"
+        android:textSize="16sp"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btn24Hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn12Hours"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="18dp"
+        android:backgroundTint="@color/buttonBlue"
+        android:text="@string/_24_hours"
+        android:textSize="16sp"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/back2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectButton"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="18dp"
+        android:backgroundTint="@color/orange"
+        android:text="@string/cancel_selection"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+
+
+</RelativeLayout>

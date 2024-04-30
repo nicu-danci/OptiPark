@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.OptiPark" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">#00000000</item>
+    </style>
+
+    <style name="Theme.OptiPark" parent="Base.Theme.OptiPark">
+        <item name="android:fontFamily">@font/alegra</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!-- Set the default font for text views -->
+        <item name="android:fontFamily">@font/alegra</item>
+    </style>
+
+</resources>
+

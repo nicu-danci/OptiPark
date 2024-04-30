@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "867565720474",
+    "project_id": "opti-park-bf883",
+    "storage_bucket": "opti-park-bf883.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867565720474:android:f1d33c3be40d8a0593a023",
+        "android_client_info": {
+          "package_name": "com.example.optipark"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATtqsPE-PEBTyJL9niD1VxPSbLCo9wkeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

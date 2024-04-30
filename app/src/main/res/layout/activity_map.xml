@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity"
+    android:background="@color/black"
+    >
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtMap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_horizontal"
+                android:text="@string/get_directions_to_a_parking_space_by_entering_its_id"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+        <!-- Add your text input field and button here -->
+            <EditText
+                android:id="@+id/inputField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/round_text_field"
+                android:hint="@string/enter_car_space"
+                android:inputType="textCapWords"
+                android:minHeight="30sp"
+                tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#257CF1"
+                android:text="@string/get_directions"
+                android:textSize="18sp"
+                tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+
+            <GridLayout
+                android:id="@+id/imageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:rowCount="11">
+
+                <ImageView
+                    android:id="@+id/A1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+
+                <TextView
+                    android:id="@+id/A1_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a1"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+
+                <ImageView
+                    android:id="@+id/A2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="02"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A2_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a2"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A3_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a3"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/imageCenter2"
+                    android:layout_width="215dp"
+                    android:layout_height="30dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:background="@color/black"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/A4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A4_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a4"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A5_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a5"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="2"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A6_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="2"
+                    android:layout_column="2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a6"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A7_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a7"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="2"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A8id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="3"
+                    android:layout_column="2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a8"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A9id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a9"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="2"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A10id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="4"
+                    android:layout_column="2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a10"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A11id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_column="0"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a11"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_column="2"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A12id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="5"
+                    android:layout_column="2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a12"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="6"
+                    android:layout_column="0"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A13id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="6"
+                    android:layout_column="0"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a13"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="6"
+                    android:layout_column="2"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A14id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="6"
+                    android:layout_column="2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a14"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="7"
+                    android:layout_column="0"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A15id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="7"
+                    android:layout_column="0"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a15"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="7"
+                    android:layout_column="2"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A16id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="7"
+                    android:layout_column="2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a16"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="8"
+                    android:layout_column="0"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A17id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="8"
+                    android:layout_column="0"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a17"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="8"
+                    android:layout_column="2"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A18id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="8"
+                    android:layout_column="2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a18"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="9"
+                    android:layout_column="0"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A19id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="9"
+                    android:layout_column="0"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a19"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <ImageView
+                    android:id="@+id/A20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="9"
+                    android:layout_column="2"
+                    android:src="@drawable/car20"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/A20id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="9"
+                    android:layout_column="2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:text="@string/a20"
+                    android:textColor="@color/white"
+                    tools:ignore="ObsoleteLayoutParam" />
+
+                <TextView
+                    android:id="@+id/entrance_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="10"
+                    android:layout_column="1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="4dp"
+                    android:text="@string/car_park_entrance"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:ignore="ObsoleteLayoutParam,TextSizeCheck" />
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.example.optipark.LineView
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/scrollView"
+       />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
